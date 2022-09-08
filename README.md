@@ -2,6 +2,8 @@
 
 ## Description
 
+Converts XML files to YOLO format.
+
 ## Installation
 
 Will be published soon. Till then, you can use the following command to install the package:
@@ -10,9 +12,15 @@ Will be published soon. Till then, you can use the following command to install 
 
 ## Usage
 
+```python
+from xmltoyolo import *
+
+convert_xml2yolo(class_path, annotation_path, output_path)
+```
+
 ## TODO
 
-- [x] Upload Initial file.
+- [x] Upload Initial working code.
 - [ ] Add error handling.
 - [ ] Add Usage and sample notebok.
 - [ ] Build and publish to PyPi.
