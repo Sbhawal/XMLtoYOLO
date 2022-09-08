@@ -21,7 +21,7 @@ convert_xml2yolo(class_path, annotation_path, output_path)
 ## TODO
 
 - [x] Upload Initial working code.
-- [ ] Add error handling.
+- [x] Add error handling.
 - [ ] Add Usage and sample notebok.
 - [ ] Build and publish to PyPi.
 - [ ] Add CLI.
