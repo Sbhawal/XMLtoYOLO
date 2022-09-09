@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>1.jpg</filename>
+	<path>C:\Users\mailt\Desktop\Github_Projects\XMLtoYOLO\test\1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>299</width>
+		<height>168</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>stop</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>32</xmin>
+			<ymin>8</ymin>
+			<xmax>133</xmax>
+			<ymax>131</ymax>
+		</bndbox>
+	</object>
+</annotation>

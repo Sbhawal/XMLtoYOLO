@@ -15,14 +15,14 @@ Will be published soon. Till then, you can use the following command to install 
 ```python
 from xmltoyolo import *
 
-convert_xml2yolo(class_path, annotation_path, output_path)
+xml2yolo(classListFile_path, annotation_path, output_path)
 ```
 
 ## TODO
 
 - [x] Upload Initial working code.
 - [x] Add error handling.
-- [ ] Add Usage and sample notebok.
+- [x] Add Usage and sample notebok.
 - [ ] Build and publish to PyPi.
 - [ ] Add CLI.
 

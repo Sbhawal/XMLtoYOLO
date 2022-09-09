@@ -40,7 +40,15 @@ def convert_coordinates(size, box):
     return (x,y,w,h)
 
 
-def convert_xml2yolo(class_path = '.', annotation_path = '.', output_path = '.'):
+def xml2yolo(class_path = '.', annotation_path = '.', output_path = '.'):
+    '''
+    Converts XML files to YOLO format.
+    
+    Parameters:
+    class_path: Path to classes.txt file.
+    annotation_path: Path to folder containing XML files.
+    output_path: Path to output folder, where the YOLO files will be saved.
+    '''
     if read_class(class_path): return
     if not os.path.exists(output_path): 
         os.makedirs(output_path)
@@ -75,6 +83,7 @@ def convert_xml2yolo(class_path = '.', annotation_path = '.', output_path = '.')
                     b = (float(xmin), float(xmax), float(ymin), float(ymax))
                     bb = convert_coordinates((width,height), b)
                     f.write(label_str + " " + " ".join([("%.6f" % a) for a in bb]) + '\n')
+        print("Classes: ", classes)
     except Exception as e:
         print (f"{bcolors.FAIL}Error: {e}{bcolors.ENDC}")
         return True
